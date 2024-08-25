@@ -5,7 +5,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 
 const Features = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef();
 
   useGSAP(() => {
     animateWithGsap("#features_title", { opacity: 1, y: 0 });
